@@ -41,6 +41,7 @@ WHERE device_id IS NULL
    OR device_id REGEXP '^[[:space:]]+$';
 
 
+-- Analysis
 -- 1. Weekly active users.
 SELECT
     concat('w', week_int) as week_name,
